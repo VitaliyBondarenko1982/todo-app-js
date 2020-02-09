@@ -5,3 +5,16 @@
 body {
   background: $c-gray;
 }
+
+.todo-app {
+  &__list {
+    list-style: none;
+  }
+
+  &__remove {
+    display: inline-block;
+    margin-left: 20px;
+    color: grey;
+    cursor: pointer;
+  }
+}
