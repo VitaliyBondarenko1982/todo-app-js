@@ -11,4 +11,13 @@ h1 {
 body {
   background: #eee; }
 
+.todo-app__list {
+  list-style: none; }
+
+.todo-app__remove {
+  display: inline-block;
+  margin-left: 20px;
+  color: grey;
+  cursor: pointer; }
+
 /*# sourceMappingURL=main.css.map */
