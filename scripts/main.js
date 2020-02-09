@@ -1,19 +1,6 @@
 'use strict';
 
-createTodoApp(
-  document.getElementById('todo-app'),
-  [
-    {
-      id: 1, title: 'HTML', completed: true,
-    },
-    {
-      id: 2, title: 'CSS', completed: true,
-    },
-    {
-      id: 3, title: 'Javascript', completed: false,
-    },
-  ]
-);
+createTodoApp(document.getElementById('todo-app'));
 
 function createTodoApp(element, todos = []) {
   render();
@@ -63,7 +50,9 @@ function createTodoApp(element, todos = []) {
     element.innerHTML = `
     <div class="todo-app">
       <form class="todo-app__form">
-        <input type="text" class="todo-app__field">
+        <label> Please, write down your todo:
+          <input type="text" class="todo-app__field">
+        </label>
       </form>
       <ul class="todo-app__list">
         ${todos.map(todo => `
